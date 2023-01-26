@@ -1,0 +1,60 @@
+#canvas {
+  border: 10px solid #8c8c8c;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #555454;
+}
+
+#spin-button {
+  border: none;
+  background-color: #f7b6d2;
+  color: #8e44ad;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#spin-button:hover {
+  background-color: #d2b6f7;
+}
+
+#spin-button:active {
+  background-color: #b6d2f7;
+}
+#arrow-container{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #8c8c8c;
+}
+
+/* Style the input box */
+.tagsinput {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the tags */
+.tag {
+  background-color: #F5A2A2; /* or any other color */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* Style the input field inside the tagsinput container */
+.tagsinput input {
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
