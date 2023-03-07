@@ -33,7 +33,7 @@ chrome.storage.local.get(["tags"], function(items){
     let sliceAngle = (2 * Math.PI) / numSlices;
   
     // Set the initial rotation angle (in radians)
-    let rotationAngle = 0;
+    let rotationAngle = Math.random() * Math.PI;
   
     // Set the spin speed (in radians per frame)
     let spinSpeed = 0.1;
@@ -104,6 +104,7 @@ chrome.storage.local.get(["tags"], function(items){
   
     function spinWheel() {
       drawWheel();
+      spinSpeed = Math.random() * 0.01 + spinSpeed
       rotationAngle = rotationAngle + spinSpeed;
     }
   
